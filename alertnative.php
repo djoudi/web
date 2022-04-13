@@ -18,7 +18,5 @@
 			echo "Ecoin";
 		endfor;
 
-
-
-
 		 ?>
+		 <!-- https://github.com/djoudi/web -->

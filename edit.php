@@ -11,7 +11,7 @@ if ($q) {
     $num = mysqli_num_rows($q);
     $data = mysqli_fetch_array($q,MYSQLI_ASSOC);
 
- /*   echo "<pre>";
+/*  echo "<pre>";
     print_r($data);
     echo "</pre>";*/
 }

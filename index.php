@@ -4,6 +4,7 @@ require_once 'inc/config.php';
 $sql = "SELECT * FROM client";
 $q = mysqli_query($connect,$sql);
 $data = mysqli_fetch_all($q,MYSQLI_ASSOC);
+//MYSQLI_ASSOC  MYSQLI_NUM  MYSQLI_BOTH
 /*echo "<pre>";
 print_r($data);
 echo "</pre>";
@@ -29,10 +30,10 @@ exit();*/
 	      <td><?= $value['prenom'] ?></td>
 	      <td><?= $value['tel'] ?></td>
 	      <td>
-	      	<!-- <a href="edit.php?p=<?= $value['id'] ?>" class="btn btn-info">Edit</a>
+	       <a href="edit.php?p=<?= $value['id'] ?>" class="btn btn-info">Edit</a>
 	      	<a href="delete.php?p=<?= $value['id'] ?>" class="btn btn-danger">Delete</a>
 
-	      <a href="#" data-cid="<?= $value['id'] ?>" class="btn btn-danger delete">Delete</a> -->
+	      <a href="#" data-cid="<?= $value['id'] ?>" class="btn btn-danger delete">Delete</a> 
 	      </td>
 	    </tr>
 	     <?php endforeach; ?>
